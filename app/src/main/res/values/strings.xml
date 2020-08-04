@@ -8,4 +8,7 @@
     <string name="wind_flow_label">Wind flow</string>
     <string name="humidity_label">Humidity</string>
 
+    <string name="weather_image_description">Weather image</string>
+    <string name="switch_theme_description">Switch theme</string>
+
 </resources>

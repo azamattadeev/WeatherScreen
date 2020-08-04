@@ -2,5 +2,6 @@
 <resources>
 
     <attr name="color_on_primary_second" format="color"/>
+    <attr name="navigation_bar_color" format="color"/>
 
 </resources>
