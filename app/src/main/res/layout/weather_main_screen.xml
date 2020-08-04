@@ -14,8 +14,10 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
 
-        android:background="@null"
         android:src="@drawable/forecast_moon_night_weather"
+        android:contentDescription="@string/switch_theme_description"
+
+        android:background="@null"
         android:rotation="-30"
         android:scaleType="centerCrop"
         android:tint="?attr/color_on_primary_second"
@@ -39,9 +41,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
 
-        android:src="@drawable/cloud_daylight_forecast_sun_sunshine_weather"
-        android:scaleX="1.3"
-        android:scaleY="1.3"
+        android:contentDescription="@string/weather_image_description"
+        android:src="@drawable/ic_sun_2"
+        android:scaleX="1.1"
+        android:scaleY="1.1"
+        android:tint="#FFEE54"
 
         app:layout_constraintDimensionRatio="W, 1:1"
         app:layout_constraintTop_toTopOf="@id/screen_main__container"
@@ -49,7 +53,7 @@
         app:layout_constraintEnd_toEndOf="@id/screen_main__container"
         app:layout_constraintBottom_toTopOf="@id/screen_main__current_temperature_text"
         app:layout_constraintVertical_weight="55"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="35dp"
         />
 
     <TextView
@@ -134,16 +138,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        style="@style/screen_main_text_values_on_details_panel_style"
         android:text="11 m/s"
-        android:textSize="28sp"
-        android:gravity="center"
 
         app:layout_constraintStart_toStartOf="@id/screen_main__wind_flow_label_text"
         app:layout_constraintEnd_toEndOf="@id/screen_main__wind_flow_label_text"
         app:layout_constraintTop_toTopOf="@id/screen_main__details_panel"
         app:layout_constraintBottom_toTopOf="@id/screen_main__wind_flow_label_text"
-        android:paddingStart="5dp"
-        android:paddingEnd="0dp"
         />
 
     <TextView
@@ -152,9 +153,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintWidth_max="120dp"
 
+        style="@style/screen_main_labels_on_details_panel_style"
         android:text="@string/wind_flow_label"
-        android:textSize="18sp"
-        android:gravity="center"
 
         app:layout_constraintStart_toStartOf="@id/screen_main__details_panel"
         app:layout_constraintEnd_toEndOf="@id/screen_main__details_panel"
@@ -168,13 +168,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        style="@style/screen_main_text_values_on_details_panel_style"
         android:text="45%"
-        android:textSize="28sp"
-        android:gravity="center"
 
         app:layout_constraintStart_toStartOf="@id/screen_main__precipitation_label_text"
         app:layout_constraintEnd_toEndOf="@id/screen_main__precipitation_label_text"
         app:layout_constraintBaseline_toBaselineOf="@+id/screen_main__wind_flow_value_text"
+        android:paddingStart="5dp"
+        android:paddingEnd="0dp"
         />
 
     <TextView
@@ -183,9 +184,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintWidth_max="120dp"
 
+        style="@style/screen_main_labels_on_details_panel_style"
         android:text="@string/precipitation_label"
-        android:textSize="18sp"
-        android:gravity="center"
 
         app:layout_constraintStart_toStartOf="@id/screen_main__details_panel"
         app:layout_constraintEnd_toStartOf="@id/screen_main__wind_flow_label_text"
@@ -198,9 +198,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        style="@style/screen_main_text_values_on_details_panel_style"
         android:text="68%"
-        android:textSize="28sp"
-        android:gravity="center"
 
         app:layout_constraintStart_toStartOf="@id/screen_main__humidity_label_text"
         app:layout_constraintEnd_toEndOf="@id/screen_main__humidity_label_text"
@@ -215,9 +214,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintWidth_max="120dp"
 
+        style="@style/screen_main_labels_on_details_panel_style"
         android:text="@string/humidity_label"
-        android:textSize="18sp"
-        android:gravity="center"
 
         app:layout_constraintStart_toEndOf="@id/screen_main__wind_flow_label_text"
         app:layout_constraintEnd_toEndOf="@id/screen_main__details_panel"
@@ -246,7 +244,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/rounded_btn"
-        style="@style/ButtonStyle"
+        style="@style/screen_main_btn_style"
         android:text="@string/weekly_label"
 
         app:layout_constraintStart_toStartOf="@id/screen_main__container"
@@ -264,7 +262,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/rounded_btn"
-        style="@style/ButtonStyle"
+        style="@style/screen_main_btn_style"
         android:text="@string/monthly_label"
 
         app:layout_constraintStart_toStartOf="@id/screen_main__container"
@@ -281,7 +279,7 @@
         android:id="@+id/screen_main__navigation_bar"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:background="?attr/colorPrimary"
+        android:background="?attr/navigation_bar_color"
 
         app:layout_constraintBottom_toBottomOf="@id/screen_main__container"
         app:layout_constraintEnd_toEndOf="@id/screen_main__container"
