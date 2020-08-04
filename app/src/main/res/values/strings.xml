@@ -3,4 +3,9 @@
 
     <string name="weekly_label">Weakly</string>
     <string name="monthly_label">Monthly</string>
+
+    <string name="precipitation_label">Precipitation</string>
+    <string name="wind_flow_label">Wind flow</string>
+    <string name="humidity_label">Humidity</string>
+
 </resources>
