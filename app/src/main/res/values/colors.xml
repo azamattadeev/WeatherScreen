@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="lilyWhite">#E1F0FF</color>
+    <color name="royalBlue">#4169E1</color>
+    <color name="doveGray">#555555</color>
+    <color name="mineShaftGray">#323232</color>
+
 </resources>
