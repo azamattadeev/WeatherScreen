@@ -9,23 +9,17 @@
     android:layout_height="match_parent"
     android:background="?attr/colorPrimaryDark">
 
-    <ImageButton
+    <Switch
         android:id="@+id/screen_main__switch_theme_btn"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-        android:src="@drawable/forecast_moon_night_weather"
-        android:contentDescription="@string/switch_theme_description"
-
-        android:background="@null"
-        android:rotation="-30"
-        android:scaleType="centerCrop"
-        android:tint="?attr/color_on_primary_second"
+        android:thumb="@drawable/night_mode_switch_thumb"
 
         app:layout_constraintEnd_toEndOf="@+id/screen_main__container"
         app:layout_constraintTop_toTopOf="@+id/screen_main__container"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         />
 
     <androidx.constraintlayout.widget.Guideline

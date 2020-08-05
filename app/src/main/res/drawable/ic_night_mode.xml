@@ -1,0 +1,25 @@
+<vector android:height="32dp" android:viewportHeight="512"
+    android:viewportWidth="512" android:width="32dp"
+    xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:pathData="M256,256m-256,0a256,256 0,1 1,512 0a256,256 0,1 1,-512 0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:endX="512" android:endY="256"
+                android:startX="-2.7E-6" android:startY="256" android:type="linear">
+                <item android:color="#FF00AEEE" android:offset="0"/>
+                <item android:color="#FF0095DA" android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:pathData="M256,469.334c-117.632,0 -213.333,-95.702 -213.333,-213.333c0,-117.631 95.702,-213.333 213.333,-213.333c117.636,0 213.333,95.702 213.333,213.333C469.333,373.632 373.636,469.334 256,469.334z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:endX="469.33334" android:endY="256.00052"
+                android:startX="42.666664" android:startY="256.00052" android:type="linear">
+                <item android:color="#FF0095DA" android:offset="0"/>
+                <item android:color="#FF00AEEE" android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:fillAlpha="0.3" android:fillColor="#FF000000"
+        android:pathData="M384,306.145C365.573,351.768 320.832,384 268.566,384c-68.771,0 -124.567,-55.796 -124.567,-124.567c0,-52.267 32.181,-97.007 77.804,-115.433c-5.918,14.429 -9.136,30.207 -9.136,46.713c0,68.823 55.796,124.567 124.567,124.567C353.791,315.28 369.57,312.062 384,306.145z" android:strokeAlpha="0.3"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M376,298.145C357.573,343.768 312.832,376 260.566,376c-68.771,0 -124.567,-55.796 -124.567,-124.567c0,-52.267 32.181,-97.007 77.804,-115.433c-5.918,14.429 -9.136,30.207 -9.136,46.713c0,68.823 55.796,124.567 124.567,124.567C345.791,307.28 361.57,304.062 376,298.145z"/>
+</vector>
