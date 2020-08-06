@@ -292,6 +292,7 @@
         android:background="@null"
         android:src="@drawable/ic_home"
         android:scaleX="1.1"
+        android:contentDescription="@string/home_button_image_description"
 
         app:layout_constraintTop_toTopOf="@id/screen_main__navigation_bar"
         app:layout_constraintBottom_toBottomOf="@id/screen_main__navigation_bar"
@@ -310,6 +311,7 @@
         style="@style/screen_main_navigation_bar_inactive_btn"
         android:background="@null"
         android:src="@drawable/ic_location"
+        android:contentDescription="@string/location_button_image_description"
 
         app:layout_constraintTop_toTopOf="@id/screen_main__navigation_bar"
         app:layout_constraintBottom_toBottomOf="@id/screen_main__navigation_bar"
@@ -327,6 +329,7 @@
         style="@style/screen_main_navigation_bar_inactive_btn"
         android:background="@null"
         android:src="@drawable/ic_settings"
+        android:contentDescription="@string/settings_button_image_description"
 
         app:layout_constraintTop_toTopOf="@id/screen_main__navigation_bar"
         app:layout_constraintBottom_toBottomOf="@id/screen_main__navigation_bar"

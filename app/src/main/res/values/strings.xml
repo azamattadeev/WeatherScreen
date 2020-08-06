@@ -11,4 +11,8 @@
     <string name="weather_image_description">Weather image</string>
     <string name="switch_theme_description">Switch theme</string>
 
+    <string name="home_button_image_description">Home</string>
+    <string name="location_button_image_description">Location</string>
+    <string name="settings_button_image_description">Settings</string>
+
 </resources>
