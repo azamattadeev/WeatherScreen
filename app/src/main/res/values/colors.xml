@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+<!--    Day theme colors-->
     <color name="white">#FFFFFF</color>
     <color name="almostWhite">#FCFFFF</color>
     <color name="lilyWhite">#ebfaff</color>
     <color name="malibuBlue">#6699FF</color>
     <color name="doveGray">#6D6C6C</color>
+    <color name="gray9">#999999</color>
+
+<!--    Night theme colors-->
+    <color name="blue">#1e4072</color>
+    <color name="blue_b">#224882</color>
+    <color name="gray7">#777777</color>
+    <color name="grayE">#EEEEEE</color>
 
 </resources>

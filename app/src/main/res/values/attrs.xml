@@ -2,6 +2,8 @@
 <resources>
 
     <attr name="color_on_primary_second" format="color"/>
+    <attr name="main_weather_info_color" format="color"/>
     <attr name="navigation_bar_color" format="color"/>
+    <attr name="navigation_bar_inactive_btn" format="color"/>
 
 </resources>

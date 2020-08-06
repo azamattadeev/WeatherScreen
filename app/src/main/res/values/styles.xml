@@ -6,15 +6,24 @@
         <item name="colorOnPrimary">@color/doveGray</item>
         <item name="color_on_primary_second">@color/malibuBlue</item>
         <item name="navigation_bar_color">@color/white</item>
+        <item name="navigation_bar_inactive_btn">@color/gray9</item>
+        <item name="main_weather_info_color">@color/gray7</item>
+
     </style>
 
     <!-- Dark application theme. -->
     <style name="DarkAppTheme" parent="Theme.AppCompat.DayNight">
-<!--        <item name="colorPrimary">@color/white</item>-->
-<!--        <item name="colorPrimaryDark">@color/lilyWhite</item>-->
-<!--        <item name="colorOnBackground">@color/doveGray</item>-->
-<!--        <item name="colorOnPrimary">@color/mineShaftGray</item>-->
-<!--        <item name="color_on_primary_second">@color/royalBlue</item>-->
+        <item name="colorPrimary">@color/blue_b</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="color_on_primary_second">@color/malibuBlue</item>
+        <item name="navigation_bar_color">@color/blue</item>
+        <item name="navigation_bar_inactive_btn">@color/grayE</item>
+        <item name="main_weather_info_color">@color/white</item>
+    </style>
+
+    <style name="main_weather_info_text_style">
+        <item name="android:textColor">?attr/main_weather_info_color</item>
     </style>
 
     <style name="screen_main_btn_style">
@@ -38,6 +47,14 @@
         <item name="android:textSize">18sp</item>
         <item name="fontFamily">sans-serif</item>
         <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="screen_main_navigation_bar_active_btn">
+        <item name="android:tint">?attr/color_on_primary_second</item>
+    </style>
+
+    <style name="screen_main_navigation_bar_inactive_btn">
+        <item name="android:tint">?attr/navigation_bar_inactive_btn</item>
     </style>
 
 </resources>

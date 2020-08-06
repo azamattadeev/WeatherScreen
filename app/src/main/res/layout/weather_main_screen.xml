@@ -55,6 +55,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
 
+        style="@style/main_weather_info_text_style"
         android:textSize="48sp"
         android:text="28\u00B0C"
         android:gravity="center"
@@ -85,6 +86,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
 
+        style="@style/main_weather_info_text_style"
         android:gravity="center"
         android:textSize="24sp"
         android:text="SUNNY"
@@ -101,6 +103,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
 
+        style="@style/main_weather_info_text_style"
         android:gravity="center"
         android:textSize="24sp"
         android:text="CITY, COUNTRY"
@@ -280,6 +283,58 @@
         app:layout_constraintStart_toStartOf="@id/screen_main__container"
         />
 
+    <ImageButton
+        android:id="@+id/screen_main_navigation_bar_home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
 
+        style="@style/screen_main_navigation_bar_active_btn"
+        android:background="@null"
+        android:src="@drawable/ic_home"
+        android:scaleX="1.1"
+
+        app:layout_constraintTop_toTopOf="@id/screen_main__navigation_bar"
+        app:layout_constraintBottom_toBottomOf="@id/screen_main__navigation_bar"
+        app:layout_constraintStart_toStartOf="@id/screen_main__navigation_bar"
+        app:layout_constraintEnd_toStartOf="@id/screen_main_navigation_bar_location_btn"
+        android:scaleType="centerInside"
+        android:padding="12dp"
+        android:layout_marginStart="25dp"
+        />
+
+    <ImageButton
+        android:id="@+id/screen_main_navigation_bar_location_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        style="@style/screen_main_navigation_bar_inactive_btn"
+        android:background="@null"
+        android:src="@drawable/ic_location"
+
+        app:layout_constraintTop_toTopOf="@id/screen_main__navigation_bar"
+        app:layout_constraintBottom_toBottomOf="@id/screen_main__navigation_bar"
+        app:layout_constraintStart_toEndOf="@id/screen_main_navigation_bar_home_btn"
+        app:layout_constraintEnd_toStartOf="@id/screen_main_navigation_bar_settings_btn"
+        android:scaleType="centerInside"
+        android:padding="12dp"
+        />
+
+    <ImageButton
+        android:id="@+id/screen_main_navigation_bar_settings_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        style="@style/screen_main_navigation_bar_inactive_btn"
+        android:background="@null"
+        android:src="@drawable/ic_settings"
+
+        app:layout_constraintTop_toTopOf="@id/screen_main__navigation_bar"
+        app:layout_constraintBottom_toBottomOf="@id/screen_main__navigation_bar"
+        app:layout_constraintStart_toEndOf="@id/screen_main_navigation_bar_location_btn"
+        app:layout_constraintEnd_toEndOf="@id/screen_main__navigation_bar"
+        android:scaleType="centerInside"
+        android:padding="12dp"
+        android:layout_marginEnd="25dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
