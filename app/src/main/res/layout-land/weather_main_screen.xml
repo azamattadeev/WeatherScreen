@@ -16,17 +16,17 @@
 
         android:thumb="@drawable/night_mode_switch_thumb"
 
-        app:layout_constraintEnd_toEndOf="@+id/screen_main__container"
+        app:layout_constraintStart_toStartOf="@+id/screen_main__container"
         app:layout_constraintTop_toTopOf="@+id/screen_main__container"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
         />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/screen_main__main_guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintGuide_percent="0.5"
         />
 
@@ -44,10 +44,9 @@
         app:layout_constraintDimensionRatio="W, 1:1"
         app:layout_constraintTop_toTopOf="@id/screen_main__container"
         app:layout_constraintStart_toStartOf="@id/screen_main__container"
-        app:layout_constraintEnd_toEndOf="@id/screen_main__container"
+        app:layout_constraintEnd_toStartOf="@id/screen_main__main_guideline"
         app:layout_constraintBottom_toTopOf="@id/screen_main__current_temperature_text"
         app:layout_constraintVertical_weight="55"
-        android:layout_marginTop="35dp"
         />
 
     <TextView
@@ -62,7 +61,7 @@
         android:padding="0dp"
 
         app:layout_constraintStart_toStartOf="@id/screen_main__container"
-        app:layout_constraintEnd_toEndOf="@id/screen_main__container"
+        app:layout_constraintEnd_toStartOf="@id/screen_main__main_guideline"
         app:layout_constraintTop_toBottomOf="@id/screen_main__weather_image"
         app:layout_constraintBottom_toTopOf="@id/screen_main__weather_type_and_location_texts_panel"
         app:layout_constraintVertical_weight="22.5"
@@ -74,11 +73,11 @@
         android:layout_height="0dp"
 
         app:layout_constraintStart_toStartOf="@id/screen_main__container"
-        app:layout_constraintEnd_toEndOf="@id/screen_main__container"
+        app:layout_constraintEnd_toEndOf="@id/screen_main__main_guideline"
         app:layout_constraintTop_toBottomOf="@id/screen_main__current_temperature_text"
-        app:layout_constraintBottom_toBottomOf="@id/screen_main__main_guideline"
+        app:layout_constraintBottom_toTopOf="@id/screen_main__navigation_bar"
         app:layout_constraintVertical_weight="22.5"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="25dp"
         />
 
     <TextView
@@ -120,12 +119,12 @@
         android:layout_height="0dp"
         android:background="@drawable/rounded_rectangle_panel"
 
-        app:layout_constraintTop_toTopOf="@id/screen_main__main_guideline"
+        app:layout_constraintTop_toTopOf="@id/screen_main__container"
         app:layout_constraintEnd_toEndOf="@id/screen_main__container"
-        app:layout_constraintStart_toStartOf="@id/screen_main__container"
+        app:layout_constraintStart_toStartOf="@id/screen_main__main_guideline"
         app:layout_constraintBottom_toTopOf="@id/screen_main__hourly_panel"
         android:layout_marginEnd="15dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintVertical_weight="35"
         />
@@ -227,11 +226,10 @@
         android:background="@drawable/rounded_rectangle_panel"
 
         app:layout_constraintTop_toBottomOf="@id/screen_main__details_panel"
-        app:layout_constraintStart_toStartOf="@id/screen_main__container"
+        app:layout_constraintStart_toStartOf="@id/screen_main__main_guideline"
         app:layout_constraintEnd_toEndOf="@id/screen_main__container"
         app:layout_constraintBottom_toTopOf="@id/screen_main__hourly_btn"
         android:layout_marginEnd="15dp"
-        android:layout_marginStart="15dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintVertical_weight="35"
         />
@@ -244,12 +242,11 @@
         style="@style/screen_main_btn_style"
         android:text="@string/weekly_label"
 
-        app:layout_constraintStart_toStartOf="@id/screen_main__container"
+        app:layout_constraintStart_toStartOf="@id/screen_main__main_guideline"
         app:layout_constraintEnd_toEndOf="@id/screen_main__container"
         app:layout_constraintTop_toBottomOf="@id/screen_main__hourly_panel"
         app:layout_constraintBottom_toTopOf="@id/screen_main__monthly_btn"
         android:layout_marginEnd="15dp"
-        android:layout_marginStart="15dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintVertical_weight="15"
         />
@@ -262,12 +259,11 @@
         style="@style/screen_main_btn_style"
         android:text="@string/monthly_label"
 
-        app:layout_constraintStart_toStartOf="@id/screen_main__container"
+        app:layout_constraintStart_toStartOf="@id/screen_main__main_guideline"
         app:layout_constraintEnd_toEndOf="@id/screen_main__container"
         app:layout_constraintTop_toBottomOf="@id/screen_main__hourly_btn"
         app:layout_constraintBottom_toTopOf="@id/screen_main__navigation_bar"
         android:layout_marginEnd="15dp"
-        android:layout_marginStart="15dp"
         android:layout_marginBottom="15dp"
         app:layout_constraintVertical_weight="15"
         />
@@ -278,9 +274,9 @@
         android:layout_height="50dp"
         android:background="?attr/navigation_bar_color"
 
+        app:layout_constraintStart_toStartOf="@id/screen_main__container"
         app:layout_constraintBottom_toBottomOf="@id/screen_main__container"
         app:layout_constraintEnd_toEndOf="@id/screen_main__container"
-        app:layout_constraintStart_toStartOf="@id/screen_main__container"
         />
 
     <ImageButton
